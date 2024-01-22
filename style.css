@@ -62,3 +62,8 @@ li a {
   background-color: white;
   margin: 6px;
 }
+
+img {
+  width: 250px;
+  height: 150px;
+}
