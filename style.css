@@ -58,39 +58,50 @@ li a {
   background-position: center;
 }
 
-.play {
+.representation {
   position: absolute;
-
   z-index: 1;
 
-  margin-top: 550px;
+  margin-top: 300px;
   margin-left: 50px;
-  width: 150px;
+  width: 500px;
+  height: 500px;
+  color: white;
+  font-size: x-large;
+}
+.title {
+  font-family: cursive;
+  font-size: xxx-large;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.overview {
+  margin-bottom: 48px;
+}
+
+.play {
+  width: 130px;
   height: 50px;
   background-color: white;
   border: none;
   border-radius: 5px;
+  font-size: 20px;
 }
 .play:hover {
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0.8);
 }
 
 .info {
-  position: absolute;
-
-  z-index: 1;
-
-  margin-top: 550px;
-  margin-left: 210px;
-
   width: 150px;
   height: 50px;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.6);
+  color: white;
   border: none;
   border-radius: 5px;
+  font-size: 20px;
 }
 .info:hover {
-  background-color: dimgray;
+  background-color: rgba(105, 105, 105, 0.6);
 }
 
 .category {

@@ -3,8 +3,8 @@
 ### Fixed Top Nav
 
 ```
-position: fixed;<br>
-top: 0;<br>
+position: fixed;
+top: 0;
 width: 100%;
 ```
 
@@ -26,7 +26,7 @@ nav {
   position: relative; // positioned relative to its normal position.
 }
 
-.play{
+.representation{
   position: absolute; // positioned relative to the nearest positioned ancestor
   z-index: 1;
 }
