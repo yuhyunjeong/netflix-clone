@@ -94,5 +94,27 @@ z-index only works on positioned elements (position: absolute, position: relativ
 .box:hover .additional-content {
   opacity: 1; /* Show on hover */
 }
+```
+
+### box shadow
+
+- Horizontal offset
+  - how far the shadow should be offset horizontally from the element.
+  - Positive values move the shadow to the right, while negative values move it to the left.
+- Vertical offset
+  - how far the shadow should be offset vertically from the element.
+  - Positive values move the shadow downwards, while negative values move it upwards.
+- Blur radius
+  - the blurriness of the shadow.
+  - A higher value creates a more blurred shadow effect.
+- Spread radius
+  - controls the size of the shadow.
+  - Positive values increase the size of the shadow, while negative values decrease it.
+- Color
+  - This sets the color of the shadow.
 
 ```
+  box-shadow: 0px 0px 10px black; /* right, bottom, blur */
+```
+
+The shadow is set to be 0 pixels to the right, 0 pixels down, with a blur radius of 10 pixels, no spread radius and it has a black color.
