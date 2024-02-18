@@ -1,9 +1,9 @@
 body {
-  background-color: black;
+  background-color: rgb(35, 35, 35);
 }
 
 nav {
-  background-color: black;
+  background-color: rgb(35, 35, 35);
   color: white;
 
   /*Fixed Top*/
@@ -114,13 +114,51 @@ li a {
 }
 
 .box {
+  position: relative;
+
+  transition: transform 0.5s ease; /* Set transition effect for transform */
+
   width: 250px;
   height: 150px;
-  background-color: white;
+
   margin: 6px;
+  overflow: hidden; /* Hide content if overflow */
+  border-radius: 3px; /* Set transition effect for transform */
 }
 
-.container img {
+.box img {
   width: 250px;
   height: 150px;
+  object-fit: cover; /* Ensure the image covers the box */
+}
+
+.additional-content {
+  position: absolute;
+
+  left: 0; /* Position at the left */
+  width: 100%;
+  height: 100px;
+  background-color: rgba(31, 30, 30, 0.8);
+  padding: 20px;
+
+  transition: opacity 0.5s ease; /* Set transition effect for opacity */
+
+  opacity: 0; /* Initially hidden */
+}
+
+.box:hover {
+  transform: scale(1.5); /* Slightly scale up the box on hover */
+
+  z-index: 1;
+  height: 250px;
+}
+
+.box:hover .additional-content {
+  opacity: 1; /* Show on hover */
+}
+
+.additional-content h3,
+.additional-content p {
+  margin: 0; /* Remove margin */
+  line-height: 1; /* reduce height */
 }
