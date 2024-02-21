@@ -59,7 +59,7 @@ z-index only works on positioned elements (position: absolute, position: relativ
 
 ```
 <div class="box">
-    <img src="./img/goodplace.webp" />
+    <img />
     <div class="additional-content">
 
     </div>
@@ -162,6 +162,17 @@ It can sit inline with text and other elements, but it also behaves like a block
 
 <hr>
 
-## Google Material Icon
+### Google Material Icon
 
 https://fonts.google.com/icons
+
+<hr>
+
+## 🛠️ Troubleshooting
+
+```
+remote: error: File netflix-clone-1.gif is 288.89 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+```
+
+Solution: Reduce file size
