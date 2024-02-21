@@ -1,4 +1,6 @@
-## CSS practice
+## CSS exercise
+
+![Alt text](netflix-clone.gif)
 
 ### Fixed Top Nav
 
