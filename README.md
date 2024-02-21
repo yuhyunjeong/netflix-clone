@@ -119,6 +119,45 @@ z-index only works on positioned elements (position: absolute, position: relativ
 
 The shadow is set to be 0 pixels to the right, 0 pixels down, with a blur radius of 10 pixels, no spread radius and it has a black color.
 
+## -webkit-text-stroke
+
+specifies the width and color of strokes for text characters
+
+```
+.number {
+  -webkit-text-stroke: 2px grey; /* text border */
+}
+
+```
+
+## decrease the gap between number and img and have img positioned above number
+
+### translateX()
+
+perform the horizontal translation <br>
+Positive values move the element to the right, while negative values move it to the left
+
+### display: inline-block;
+
+It can sit inline with text and other elements, but it also behaves like a block element in that you can set its width, height, margins, and paddings
+
+```
+.rank {
+  position: relative;
+  display: inline-block; /* allows the element to have both inline and block-level properties */
+
+}
+.rank .box {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Move the image to the horizontal center */
+
+  transform: translateX(-20%); /* the element is moved 20% to the left relative to the size of the element's parent from its current position */
+
+  margin: 6px; /* adjust the spacing between the number and the image */
+}
+```
+
 <hr>
 
 ## Google Material Icon

@@ -213,3 +213,78 @@ li .material-symbols-rounded {
 .description span {
   margin-right: 5px;
 }
+
+/* top10 section */
+.top10 {
+  display: block;
+}
+.top10 .container {
+  display: flex;
+  height: 250px; /*fix height*/
+}
+
+.top10 .box {
+  width: 150px;
+  height: 200px;
+}
+
+.rank {
+  position: relative;
+  display: inline-block; /* allows the element to have both inline and block-level properties */
+
+  width: 250px;
+  height: 150px;
+
+  margin: 6px;
+}
+.rank .box {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Move the image to the horizontal center */
+
+  transition: transform 0.5s ease; /* Set transition effect for transform */
+  transform: translateX(
+    -20%
+  ); /* the element is moved 20% to the left relative to the size of the element's parent from its current position */
+
+  margin: 6px; /* adjust the spacing between the number and the image */
+
+  border-radius: 3px; /* Set transition effect for transform */
+}
+.rank .additional-content {
+  position: absolute;
+
+  left: 0; /* Position at the left */
+  width: 250px;
+  height: 150px;
+  background-color: rgb(25, 25, 25);
+  padding: 15px;
+
+  transition: opacity 0.5s ease; /* Set transition effect for opacity */
+
+  opacity: 0; /* Initially hidden */
+}
+.rank .box:hover {
+  transform: scale(1.5); /* Slightly scale up the box on hover */
+
+  z-index: 1;
+  height: 300px;
+
+  box-shadow: 0px 0px 10px black; /* right, bottom, blur */
+}
+.rank .box:hover .additional-content {
+  opacity: 1; /* Show on hover */
+}
+
+.rank img {
+  width: 150px;
+  height: 200px;
+}
+
+.number {
+  -webkit-text-stroke: 3px grey; /* text border */
+  color: black;
+
+  font-size: 230px;
+  font-weight: 900;
+}
