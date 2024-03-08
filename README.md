@@ -116,12 +116,12 @@ z-index only works on positioned elements (position: absolute, position: relativ
   - This sets the color of the shadow.
 
 ```
-  box-shadow: 0px 0px 10px black; /* right, bottom, blur */
+  box-shadow: 0px 0px 10px black; /* Horizontal, Vertical, blur */
 ```
 
 The shadow is set to be 0 pixels to the right, 0 pixels down, with a blur radius of 10 pixels, no spread radius and it has a black color.
 
-## -webkit-text-stroke
+### -webkit-text-stroke
 
 specifies the width and color of strokes for text characters
 
@@ -132,16 +132,16 @@ specifies the width and color of strokes for text characters
 
 ```
 
-## decrease the gap between number and img and have img positioned above number
+### decrease the gap between number and img and have img positioned above number
 
-### translateX()
+- translateX()
 
-perform the horizontal translation <br>
-Positive values move the element to the right, while negative values move it to the left
+  perform the horizontal translation <br>
+  Positive values move the element to the right, while negative values move it to the left
 
-### display: inline-block;
+- display: inline-block;
 
-It can sit inline with text and other elements, but it also behaves like a block element in that you can set its width, height, margins, and paddings
+  can sit inline with text and other elements, but it also behaves like a block element in that you can set its width, height, margins, and paddings
 
 ```
 .rank {
@@ -165,6 +165,10 @@ It can sit inline with text and other elements, but it also behaves like a block
 ### Google Material Icon
 
 https://fonts.google.com/icons
+
+### Image source
+
+[TMDB](https://www.themoviedb.org/)
 
 <hr>
 
